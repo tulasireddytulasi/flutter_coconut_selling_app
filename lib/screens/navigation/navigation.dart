@@ -141,7 +141,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
     }
 
     return Container(
-      color: LAVENDER_PINOCCHIO,
+      color: white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: _navBarItemList,
@@ -170,7 +170,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
                 CircleAvatar(
                   radius: 20,
                   backgroundColor:
-                      index == _selectedIndex ? RANGOON_GREEN : blueGrey200,
+                      index == _selectedIndex ? RANGOON_GREEN : lightWhite,
                   child: Image.asset(
                     imgurl,
                     width: 22,
