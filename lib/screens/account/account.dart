@@ -4,6 +4,7 @@ import 'package:coconut/screens/account/widget/divider_widget.dart';
 import 'package:coconut/screens/account/widget/menu_list.dart';
 import 'package:coconut/screens/account/widget/name_card.dart';
 import 'package:coconut/screens/navigation/navigation.dart';
+import 'package:coconut/screens/orders_history_screen/orders_history_screen.dart';
 import 'package:coconut/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -64,9 +65,15 @@ class _MyAccountState extends State<MyAccount> {
                     userMobileNo: userMobileNo,
                   ),
                   const HorizontalDividerWidget(),
-                  const MenuList(
+                  MenuList(
                     label: "Orders",
                     subLabel: "Manage your orders",
+                    onclick: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const OrdersHistoryScreen(),
+                      ),
+                    ),
                   ),
                   const HorizontalDividerWidget(),
                   const MenuList(

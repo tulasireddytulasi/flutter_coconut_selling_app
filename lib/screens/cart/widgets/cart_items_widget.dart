@@ -74,7 +74,7 @@ class _ItemsState extends State<Items> {
                     width: _screenWidth / 2,
                     margin: const EdgeInsets.only(top: 4),
                     child: const Text(
-                      "₹ 49.00",
+                      "₹49.00",
                       softWrap: true,
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,

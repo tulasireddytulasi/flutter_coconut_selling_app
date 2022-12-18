@@ -1,3 +1,4 @@
+import 'package:coconut/screens/reusable_widgets/dash_line_divider_widget.dart';
 import 'package:coconut/utils/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -148,11 +149,7 @@ class _BillingDetailsWidgetState extends State<BillingDetailsWidget> {
             ],
           ),
           const SizedBox(height: 10),
-          const Divider(
-            height: 1,
-            thickness: 2,
-            color: divider2,
-          ),
+          const DashLineDivider(color: Colors.grey),
           const SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

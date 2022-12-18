@@ -29,6 +29,7 @@ dependencies:
   http: ^0.13.5
   intl: ^0.17.0
   shared_preferences: ^2.0.6
+  lottie: ^1.4.2
 
 dev_dependencies:
   flutter_test:
@@ -52,3 +53,4 @@ flutter:
     - assets/icons/
     - assets/images/
     - assets/imgs/
+    - assets/lottie/

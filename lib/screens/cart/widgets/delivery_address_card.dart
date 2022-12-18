@@ -1,5 +1,6 @@
 import 'package:coconut/screens/cart/widgets/cash_on_deleivery_widget.dart';
 import 'package:coconut/screens/cart/widgets/place_order_button_widget.dart';
+import 'package:coconut/screens/reusable_widgets/dash_line_divider_widget.dart';
 import 'package:coconut/utils/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -89,11 +90,7 @@ class _DeliveryAddressCardState extends State<DeliveryAddressCard> {
               ),
             ),
           ),
-          const Divider(
-            height: 1,
-            thickness: 1,
-            color: divider2,
-          ),
+          const DashLineDivider(color: Colors.grey, dashWidth: 4.0),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: const [

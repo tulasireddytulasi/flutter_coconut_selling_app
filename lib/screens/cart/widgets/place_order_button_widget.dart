@@ -1,3 +1,4 @@
+import 'package:coconut/screens/order_status_screen/order_status_screen.dart';
 import 'package:coconut/screens/reusable_widgets/reusable_button.dart';
 import 'package:coconut/utils/colors.dart';
 import 'package:coconut/utils/constants.dart';
@@ -18,7 +19,10 @@ class _PlaceOrderButtonState extends State<PlaceOrderButton> {
       child: ProceedButton(
         text: "Place Order",
         buttonWidth: 190,
-        callingAPI: () {},
+        callingAPI: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const LottieScreen()),
+        ),
         color: lightRed,
         borderRadius: 4,
         childWidget: Row(
