@@ -20,6 +20,19 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Coconut App',
         debugShowCheckedModeBanner: false,
+        // supportedLocales: const [
+        //   Locale('te', 'IN'),
+        //   Locale('en', 'IN'),
+        //   Locale('hi', 'IN'),
+        //   Locale('ml', 'IN'),
+        //   Locale('mr', 'IN')
+        // ],
+        // localizationsDelegates: [
+        //   GlobalMaterialLocalizations.delegate,
+        //   GlobalWidgetsLocalizations.delegate,
+        //   GlobalCupertinoLocalizations.delegate,
+        // ],
+        // locale: const Locale('te', 'IN'),
         theme: ThemeData(
           primarySwatch: Colors.blueGrey,
         ),

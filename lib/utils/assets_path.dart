@@ -17,3 +17,4 @@ const topCutCoconut = "assets/images/top_cut_coconut.png";
 
 // Dummy imgs
 const greenCoconut = "assets/imgs/green_coconut.jpg";
+const greenCoconut1 = "assets/imgs/green_coconut_1.jpg";

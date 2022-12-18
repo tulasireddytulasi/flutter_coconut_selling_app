@@ -88,6 +88,7 @@ class ItemCardWidget extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               maxLines: 4,
               text: const TextSpan(children: [
+                WidgetSpan(child: Text("dd")),
                 TextSpan(
                   text: "M.R.P:",
                   style: TextStyle(
