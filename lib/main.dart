@@ -37,6 +37,10 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blueGrey,
         ),
         home: const BottomNavbar(),
+        routes: {
+          BottomNavbar.routeName: (_) => const BottomNavbar(),
+        },
+        // onGenerateRoute: generateRoute,
       ),
     );
   }

@@ -19,7 +19,7 @@ class BottomNavbar extends StatefulWidget {
 
 class _BottomNavbarState extends State<BottomNavbar> {
   // ignore: unused_field
-  int _selectedItem = 0;
+  final int _selectedItem = 0;
 
   Future<bool> _onWillPop() async {
     return (await showDialog(
@@ -41,7 +41,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
                     exit(0);
                   }
                 },
-                child: new Text('Yes'),
+                child: const Text('Yes'),
               ),
             ],
           ),
@@ -72,12 +72,26 @@ class _BottomNavbarState extends State<BottomNavbar> {
           onChange: (val) {
             setState(() {
               _currentScreen = val;
+              switch (_currentScreen) {
+                case 1:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Cart()),
+                  );
+                  break;
+                case 2:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const MyAccount()),
+                  );
+                  break;
+              }
             });
           },
           titles: const ["Dashboard", "Cart", "Account"],
           imgurls: const [homeIcon, cartIcon, userIcon],
         ),
-        body: _screens[_currentScreen],
+        body: _screens[0],
       ),
     );
   }

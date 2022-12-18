@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:coconut/screens/account/widget/divider_widget.dart';
 import 'package:coconut/screens/account/widget/menu_list.dart';
 import 'package:coconut/screens/account/widget/name_card.dart';
+import 'package:coconut/screens/navigation/navigation.dart';
 import 'package:coconut/utils/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -31,8 +32,8 @@ class _MyAccountState extends State<MyAccount> {
     final screenWidth = MediaQuery.of(context).size.width;
     return WillPopScope(
       onWillPop: () async {
-        // Navigator.of(context).pushNamedAndRemoveUntil(
-        //     BottomNavbar.routeName, (Route<dynamic> route) => false);
+        Navigator.of(context).pushNamedAndRemoveUntil(
+            BottomNavbar.routeName, (Route<dynamic> route) => false);
         return true;
       },
       child: Scaffold(
@@ -41,12 +42,12 @@ class _MyAccountState extends State<MyAccount> {
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              // Navigator.of(context).pushNamedAndRemoveUntil(
-              //     BottomNavbar.routeName, (Route<dynamic> route) => false);
+              Navigator.of(context).pushNamedAndRemoveUntil(
+                  BottomNavbar.routeName, (Route<dynamic> route) => false);
             },
           ),
           title: const Text(
-            "Account",
+            "My Account",
             style: TextStyle(fontSize: 18, color: white),
           ),
           centerTitle: false,
