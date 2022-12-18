@@ -64,7 +64,12 @@ class _MyAccountState extends State<MyAccount> {
                     userMobileNo: userMobileNo,
                   ),
                   const HorizontalDividerWidget(),
-                  MenuList(
+                  const MenuList(
+                    label: "Orders",
+                    subLabel: "Manage your orders",
+                  ),
+                  const HorizontalDividerWidget(),
+                  const MenuList(
                     label: "Privacy Policy",
                     subLabel: "Manage your privacy preferences",
                   ),
