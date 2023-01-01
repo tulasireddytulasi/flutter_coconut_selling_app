@@ -54,3 +54,32 @@ flutter:
     - assets/images/
     - assets/imgs/
     - assets/lottie/
+
+  fonts:
+    - family: MontserratRegular
+      fonts:
+        - asset: assets/fonts/Montserrat-Regular.ttf
+
+    - family: MontserratMedium
+      fonts:
+        - asset: assets/fonts/Montserrat-Medium.ttf
+
+    - family: MontserratLight
+      fonts:
+        - asset: assets/fonts/Montserrat-Light.ttf
+
+    - family: MontserratSemiBold
+      fonts:
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+
+    - family: MontserratBold
+      fonts:
+        - asset: assets/fonts/Montserrat-Bold.ttf
+
+    - family: MontserratItalic
+      fonts:
+        - asset: assets/fonts/Montserrat-Italic.ttf
+
+    - family: MontserratBoldItalic
+      fonts:
+        - asset: assets/fonts/Montserrat-BoldItalic.ttf

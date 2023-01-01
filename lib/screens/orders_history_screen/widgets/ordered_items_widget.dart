@@ -106,7 +106,7 @@ class _OrderedItemsWidgetState extends State<OrderedItemsWidget> {
                       fontSize: 14,
                       color: black,
                       fontWeight: FontWeight.bold,
-                      fontFamily: MONTSERRAT_REGULAR,
+                      fontFamily: montserratRegular,
                     ),
                   ),
                   Icon(

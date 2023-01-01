@@ -88,7 +88,6 @@ class ItemCardWidget extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               maxLines: 4,
               text: const TextSpan(children: [
-                WidgetSpan(child: Text("dd")),
                 TextSpan(
                   text: "M.R.P:",
                   style: TextStyle(
@@ -97,7 +96,7 @@ class ItemCardWidget extends StatelessWidget {
                       fontWeight: FontWeight.normal),
                 ),
                 TextSpan(
-                  text: " ₹ 49.00",
+                  text: " ₹49.00",
                   style: TextStyle(
                       fontSize: 18, color: black, fontWeight: FontWeight.bold),
                 ),

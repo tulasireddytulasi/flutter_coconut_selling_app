@@ -36,7 +36,7 @@ class ProceedButton extends StatelessWidget {
                 text,
                 style: const TextStyle(
                   fontSize: 14,
-                  fontFamily: MONTSERRAT_REGULAR,
+                  fontFamily: montserratRegular,
                   color: white,
                 ),
               ),

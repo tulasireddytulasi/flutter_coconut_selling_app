@@ -1,7 +1,10 @@
-const MONTSERRAT_REGULAR = 'MontserratRegular';
-const MONTSERRAT_MEDIUM = 'MontserratMedium';
-const MONTSERRAT_LIGHT = 'MontserratLight';
-const MONTSERRAT_SEMIBOLD = 'MontserratSemiBold';
+const montserratRegular = 'MontserratRegular';
+const montserratMedium = 'MontserratMedium';
+const montserratLight = 'MontserratLight';
+const montserratSemiBold = 'MontserratSemiBold';
+const montserratBold = 'MontserratBold';
+const montserratBoldItalic = 'MontserratBoldItalic';
+const montserratItalic = 'MontserratItalic';
 
 // Image Urls
 

@@ -77,6 +77,11 @@ class _MyAccountState extends State<MyAccount> {
                   ),
                   const HorizontalDividerWidget(),
                   const MenuList(
+                    label: "Address",
+                    subLabel: "Manage your address",
+                  ),
+                  const HorizontalDividerWidget(),
+                  const MenuList(
                     label: "Privacy Policy",
                     subLabel: "Manage your privacy preferences",
                   ),
@@ -108,7 +113,7 @@ class _MyAccountState extends State<MyAccount> {
                       });
                     },
                   ),
-                  HorizontalDividerWidget(),
+                  const HorizontalDividerWidget(),
                   const MenuList(
                     label: "Rate Us",
                     subLabel: "Rate us on Play Store",
@@ -121,7 +126,7 @@ class _MyAccountState extends State<MyAccount> {
                   const HorizontalDividerWidget(),
                   const MenuList(
                     label: "About Us",
-                    subLabel: "Know about Safelifts",
+                    subLabel: "Know about Coconuts",
                   ),
                   const HorizontalDividerWidget(),
                   const MenuList(

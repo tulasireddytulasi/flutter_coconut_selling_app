@@ -38,7 +38,7 @@ class _PlaceOrderButtonState extends State<PlaceOrderButton> {
                     fontSize: 16,
                     color: white,
                     fontWeight: FontWeight.normal,
-                    fontFamily: MONTSERRAT_REGULAR,
+                    fontFamily: montserratRegular,
                   ),
                 ),
                 Text(
@@ -47,7 +47,7 @@ class _PlaceOrderButtonState extends State<PlaceOrderButton> {
                     fontSize: 14,
                     color: divider2,
                     fontWeight: FontWeight.normal,
-                    fontFamily: MONTSERRAT_REGULAR,
+                    fontFamily: montserratRegular,
                   ),
                 )
               ],
@@ -65,7 +65,7 @@ class _PlaceOrderButtonState extends State<PlaceOrderButton> {
                         fontSize: 16,
                         color: white,
                         fontWeight: FontWeight.normal,
-                        fontFamily: MONTSERRAT_REGULAR,
+                        fontFamily: montserratRegular,
                       ),
                     ),
                     WidgetSpan(

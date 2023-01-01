@@ -19,7 +19,6 @@ class DashLineDivider extends StatelessWidget {
           final boxWidth = constraints.constrainWidth();
           final dashHeight = height;
           final dashCount = (boxWidth / (2 * dashWidth)).floor();
-          print("dashCount: $dashCount");
           return Flex(
             children: List.generate(dashCount, (_) {
               return SizedBox(

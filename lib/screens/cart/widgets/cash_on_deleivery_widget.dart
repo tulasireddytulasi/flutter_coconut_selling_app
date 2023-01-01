@@ -29,7 +29,7 @@ class CashOnDeliveryWidget extends StatelessWidget {
                     fontSize: 12,
                     color: black,
                     fontWeight: FontWeight.normal,
-                    fontFamily: MONTSERRAT_REGULAR,
+                    fontFamily: montserratRegular,
                   ),
                 ),
                 Icon(
@@ -45,7 +45,7 @@ class CashOnDeliveryWidget extends StatelessWidget {
                 fontSize: 12,
                 color: black,
                 fontWeight: FontWeight.normal,
-                fontFamily: MONTSERRAT_REGULAR,
+                fontFamily: montserratRegular,
               ),
             ),
           ],
