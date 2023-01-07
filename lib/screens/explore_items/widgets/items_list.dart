@@ -14,7 +14,7 @@ class _ItemsListState extends State<ItemsList> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 300,
+      height: 200,
       child: ListView.separated(
           itemCount: 10,
           shrinkWrap: true,
