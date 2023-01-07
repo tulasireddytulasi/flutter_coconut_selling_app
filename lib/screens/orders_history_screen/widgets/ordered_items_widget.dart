@@ -16,6 +16,14 @@ class _OrderedItemsWidgetState extends State<OrderedItemsWidget> {
   Widget build(BuildContext context) {
     final double _screenWidth = MediaQuery.of(context).size.width;
     return Container(
+      padding: const EdgeInsets.all(8),
+      margin: const EdgeInsets.only(bottom: 10),
+      decoration: BoxDecoration(
+        borderRadius: const BorderRadius.all(
+          Radius.circular(8.0),
+        ),
+        border: Border.all(color: grey, width: 1),
+      ),
       child: Column(
         children: [
           Row(
@@ -42,9 +50,10 @@ class _OrderedItemsWidgetState extends State<OrderedItemsWidget> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.end,
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(
-                      width: _screenWidth / 1.6,
+                      width: _screenWidth / 1.8,
                       child: const Text(
                         "Tender Coconut 1 pc ( Approx 800 g - 1500 g )",
                         softWrap: true,
@@ -58,7 +67,7 @@ class _OrderedItemsWidgetState extends State<OrderedItemsWidget> {
                       ),
                     ),
                     Container(
-                      width: _screenWidth / 1.6,
+                      width: _screenWidth / 1.8,
                       margin: const EdgeInsets.only(top: 4),
                       child: const Text(
                         "PRIVATE LABEL",
@@ -143,7 +152,7 @@ class _OrderedItemsWidgetState extends State<OrderedItemsWidget> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
+                  children: const [
                     Text(
                       "4",
                       style: TextStyle(fontSize: 12, color: white),
@@ -155,6 +164,20 @@ class _OrderedItemsWidgetState extends State<OrderedItemsWidget> {
                       color: white,
                     )
                   ],
+                ),
+              ),
+              const Spacer(),
+              Container(
+                height: 18,
+                alignment: Alignment.center,
+                padding: const EdgeInsets.only(left: 4, right: 4),
+                decoration: BoxDecoration(
+                  color: Colors.green.shade700,
+                  borderRadius: BorderRadius.circular(4),
+                ),
+                child: const Text(
+                  "Delivered",
+                  style: TextStyle(fontSize: 12, color: white),
                 ),
               ),
             ],

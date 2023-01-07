@@ -33,16 +33,10 @@ class _OrdersHistoryScreenState extends State<OrdersHistoryScreen> {
               child: ListView.separated(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
-                itemCount: 4,
+                itemCount: 10,
                 scrollDirection: Axis.vertical,
-                separatorBuilder: (context, index) => const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Divider(
-                    height: 1,
-                    thickness: 2,
-                    color: black,
-                  ),
-                ),
+                separatorBuilder: (context, index) =>
+                    const SizedBox(height: 10),
                 itemBuilder: (context, index) {
                   return const OrderedItemsWidget();
                 },

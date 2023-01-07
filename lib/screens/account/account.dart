@@ -143,7 +143,7 @@ class _MyAccountState extends State<MyAccount> {
                       SharedPreferences sharedPreferences =
                           await SharedPreferences.getInstance();
                       sharedPreferences.clear();
-                      await Future.delayed(Duration(milliseconds: 250),
+                      await Future.delayed(const Duration(milliseconds: 250),
                           () async {
                         // Navigator.of(context).pushNamedAndRemoveUntil(
                         //     LoginScreen.routeName,
