@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:coconut/screens/account/account.dart';
 import 'package:coconut/screens/cart/cart.dart';
 import 'package:coconut/screens/dashboard/dashboard.dart';
+import 'package:coconut/screens/explore_items/explore_items.dart';
 import 'package:coconut/utils/assets_path.dart';
 import 'package:coconut/utils/colors.dart';
 import 'package:flutter/material.dart';
@@ -76,10 +77,17 @@ class _BottomNavbarState extends State<BottomNavbar> {
                 case 1:
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Cart()),
+                    MaterialPageRoute(
+                        builder: (context) => const ExploreItems()),
                   );
                   break;
                 case 2:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const Cart()),
+                  );
+                  break;
+                case 3:
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const MyAccount()),
@@ -88,8 +96,8 @@ class _BottomNavbarState extends State<BottomNavbar> {
               }
             });
           },
-          titles: const ["Dashboard", "Cart", "Account"],
-          imgurls: const [homeIcon, cartIcon, userIcon],
+          titles: const ["Dashboard", "Explore Items", "Cart", "Account"],
+          imgurls: const [homeIcon, shoppingBagIcon, cartIcon, userIcon],
         ),
         body: _screens[0],
       ),

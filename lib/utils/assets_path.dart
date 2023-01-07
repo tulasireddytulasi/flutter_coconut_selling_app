@@ -2,6 +2,7 @@
 const homeIcon = "assets/icons/home_icon.png";
 const cartIcon = "assets/icons/cart.png";
 const userIcon = "assets/icons/user.png";
+const shoppingBagIcon = "assets/icons/shopping_bag.png";
 const rightIcon = "assets/icons/home_icon.png";
 const wrongIcon = "assets/icons/home_icon.png";
 
@@ -18,3 +19,4 @@ const topCutCoconut = "assets/images/top_cut_coconut.png";
 // Dummy imgs
 const greenCoconut = "assets/imgs/green_coconut.jpg";
 const greenCoconut1 = "assets/imgs/green_coconut_1.jpg";
+const greenCoconut2 = "assets/imgs/green_coconut2.png";

@@ -25,7 +25,7 @@ const darkRed = Color(0xFFEB1C1C);
 const black4 = Color(0xFF545454);
 const lightGrey = Color(0xFF363636);
 const grey1 = Color(0xFF707070);
-
+const LIGHT_PINK_1 = Color(0xFFFBEFFC);
 const orange = Color(0xFFF24023);
 const lynxWhite = Color(0xFFF7F7F7);
 const wisppink = Color(0xFFFEF5FE);
