@@ -35,6 +35,7 @@ class MyApp extends StatelessWidget {
         // locale: const Locale('te', 'IN'),
         theme: ThemeData(
           primarySwatch: Colors.blueGrey,
+          useMaterial3: false,
         ),
         home: const BottomNavbar(),
         routes: {

@@ -111,11 +111,12 @@ class CustomBottomNavigationBar extends StatefulWidget {
   final List<String> titles;
   final List<String> imgurls;
 
-  CustomBottomNavigationBar(
-      {this.defaultSelectedIndex = 0,
-      required this.onChange,
-      required this.titles,
-      required this.imgurls});
+  CustomBottomNavigationBar({
+    this.defaultSelectedIndex = 0,
+    required this.onChange,
+    required this.titles,
+    required this.imgurls,
+  });
 
   @override
   _CustomBottomNavigationBarState createState() =>

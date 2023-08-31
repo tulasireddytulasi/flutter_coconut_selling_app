@@ -36,8 +36,7 @@ class _CartState extends State<Cart> {
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: () async {
-        Navigator.of(context).pushNamedAndRemoveUntil(
-            BottomNavbar.routeName, (Route<dynamic> route) => false);
+        Navigator.of(context).pushNamedAndRemoveUntil(BottomNavbar.routeName, (Route<dynamic> route) => false);
         return true;
       },
       child: Scaffold(
@@ -46,8 +45,7 @@ class _CartState extends State<Cart> {
           elevation: 1,
           backgroundColor: blueGrey200,
           leading: GestureDetector(
-            onTap: () => Navigator.of(context).pushNamedAndRemoveUntil(
-                BottomNavbar.routeName, (Route<dynamic> route) => false),
+            onTap: () => Navigator.of(context).pushNamedAndRemoveUntil(BottomNavbar.routeName, (Route<dynamic> route) => false),
             child: const Icon(Icons.arrow_back),
           ),
           title: const Text(
@@ -58,14 +56,14 @@ class _CartState extends State<Cart> {
         body: SafeArea(
           child: Container(
             alignment: Alignment.center,
-            child: Stack(
+            child: const Stack(
               children: [
                 SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
-                    children: const [
+                    children: [
                       SizedBox(height: 20),
                       FreeDeliveryCard(),
                       SizedBox(height: 16),
@@ -84,7 +82,7 @@ class _CartState extends State<Cart> {
                     ],
                   ),
                 ),
-                const Positioned(
+                Positioned(
                   left: 0,
                   right: 0,
                   bottom: 0,

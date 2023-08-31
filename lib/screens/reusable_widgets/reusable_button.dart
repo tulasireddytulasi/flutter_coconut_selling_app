@@ -12,6 +12,7 @@ class ProceedButton extends StatelessWidget {
   final double borderRadius;
   final Widget? childWidget;
   const ProceedButton({
+    Key? key,
     required this.text,
     required this.callingAPI,
     required this.buttonWidth,
@@ -20,7 +21,7 @@ class ProceedButton extends StatelessWidget {
     this.color = Colors.green,
     this.borderRadius = 25,
     this.childWidget,
-  });
+  }) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -43,7 +44,7 @@ class ProceedButton extends StatelessWidget {
         ),
         style: ElevatedButton.styleFrom(
           elevation: 0,
-          primary: color,
+          backgroundColor: color,
           shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(borderRadius)),
         ),
